@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Battlecry Initiative
 
-## Getting Started
+Next.js site for [battlecryinitiative.org](https://battlecryinitiative.org).
 
-First, run the development server:
+## Stack
+
+- **Next.js** (App Router)
+- **Tailwind CSS** (grunge palette, Bebas Neue + Karla)
+- **Vercel** (hosting + CDN + SSL)
+- **GitHub** (code)
+- **Cloudflare** (domain)
+- **Google Workspace** (info@battlecryinitiative.com)
+
+## Design
+
+- **Tone:** Strong, grunge, community-focused, still welcoming.
+- **Colors:** Dark grit (charcoal/warm black), rust accent, cream/sand text.
+- **Fonts:** Bebas Neue (display), Karla (body).
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Page         | Route          |
+|-------------|----------------|
+| Home        | `/`            |
+| About       | `/about`       |
+| Get Involved| `/get-involved`|
+| Events      | `/events`      |
+| Shop        | `/shop`        |
+| Donate      | `/donate`      |
 
-## Learn More
+## Assets
 
-To learn more about Next.js, take a look at the following resources:
+- **Logo (B&W):** `public/logo-bw.png` — used in header and footer.
+- **Pink lion (women's events):** Save the pink lion image from [Instagram](https://www.instagram.com/battlecry_initiative/) as `public/pink-lion.png` to show it on the Events page in the Women's Events section. Until then, a rose-accent placeholder appears.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Next steps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Donations:** Connect Donate page to Stripe, Donorbox, or your processor; add thank-you page and email receipt.
+2. **Shop:** Embed Shopify (Buy Buttons or storefront) on `/shop` or link to a subdomain with same header/footer.
+3. **Events:** Replace mock events with real data (CMS, Google Calendar, or Eventbrite).
+4. **Domain:** Point battlecryinitiative.org to Vercel (or Cloudflare → Vercel).
+5. **Imagery:** Swap Unsplash hero/section URLs for your own photos if desired (see `src/app/page.tsx`).

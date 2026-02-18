@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grit-950: #0d0c0b;
+  --grit-900: #1a1816;
+  --grit-800: #2a2724;
+  --rust-500: #b91c1c;
+  --cream: #f5f0e8;
+  --sand: #e8e0d4;
+}
+
+body {
+  @apply bg-grit-950 text-cream antialiased;
+}
+
+/* Subtle noise overlay for grunge texture */
+.grunge-bg {
+  position: relative;
+}
+.grunge-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grunge nav: black/grey header with stronger texture */
+.header-grunge {
+  background-color: #0a0908;
+}
+.header-grunge.grunge-bg::before {
+  opacity: 0.06;
+}
+
+/* Card hover lift */
+.card-hover {
+  @apply transition-all duration-300;
+}
+.card-hover:hover {
+  @apply -translate-y-0.5;
+}
+
+/* Button styles - darker red */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-rust-500 px-6 py-3 font-display text-lg uppercase tracking-wider text-cream transition-all hover:bg-rust-400 focus:outline-none focus:ring-2 focus:ring-rust-400 focus:ring-offset-2 focus:ring-offset-grit-900;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border-2 border-grit-500 bg-grit-800/80 px-6 py-3 font-display text-lg uppercase tracking-wider text-sand transition-all hover:border-rust-500 hover:text-rust-300 focus:outline-none focus:ring-2 focus:ring-grit-500 focus:ring-offset-2 focus:ring-offset-grit-900;
+}
+
+/* Section container */
+.section-padding {
+  @apply px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28;
+}
+
+.max-section {
+  @apply mx-auto max-w-6xl;
+}
