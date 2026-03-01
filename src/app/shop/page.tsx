@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const APPAREL_PREVIEWS = [
-  { name: "Battlecry T-Shirt", image: "/images/Tshirt.png" },
-  { name: "Battlecry Hoodie", image: "/images/Hoodie.png" },
+  { name: "Battlecry T-Shirt", image: "/images/tshirt.png" },
+  { name: "Battlecry Hoodie", image: "/images/hoodie.png" },
 ];
 
 export default function ShopPage() {
