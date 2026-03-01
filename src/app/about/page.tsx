@@ -59,7 +59,7 @@ export default function AboutPage() {
           <p className="mt-4 max-w-2xl font-body text-grit-300">
             We run classes and community support built around Jiu Jitsu—structured
             training, mentorship, and a culture of showing up for each other. As we
-            grow, we're moving toward a dedicated facility; until then, we partner
+            grow, we&apos;re moving toward a dedicated facility; until then, we partner
             with spaces and instructors who share our mission.
           </p>
           <ul className="mt-6 list-inside list-disc space-y-2 font-body text-grit-300">

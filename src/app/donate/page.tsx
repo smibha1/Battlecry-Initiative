@@ -24,7 +24,7 @@ export default function DonatePage() {
             Donation Amount
           </h2>
           <p className="mt-2 font-body text-grit-400">
-            One-time or monthly. Tax-deductible. Secure. You'll receive a receipt by email.
+            One-time or monthly. Tax-deductible. Secure. You&apos;ll receive a receipt by email.
           </p>
 
           {/* Mock form - replace with Stripe/Donorbox etc. */}

@@ -168,7 +168,7 @@ export default function HomePage() {
             Battlecry Training Facility
           </h2>
           <p className="mt-6 max-w-2xl font-body text-grit-300">
-            Once we raise enough funds, we'll open a physical space that includes a
+            Once we raise enough funds, we&apos;ll open a physical space that includes a
             dedicated Jiu Jitsu training area, childcare for families, and recovery
             options—injury recovery, relaxation, and bodywork. Your donations
             directly move us toward opening those doors.
