@@ -11,10 +11,10 @@ const EVENT_NAME = "Free Women's Self-Defense";
 const EVENT_TIME = "8:00 PM – 9:00 PM";
 const EVENT_LOCATION = "Tri-City Jiu Jitsu · Artesia";
 
-// Next 3 Tuesdays starting Feb 17, 2026
+// Next 3 Tuesdays in March 2026
 function getNextThreeTuesdays(): { label: string; date: Date }[] {
   const out: { label: string; date: Date }[] = [];
-  const start = new Date("2026-02-17T20:00:00");
+  const start = new Date("2026-03-03T20:00:00");
   for (let i = 0; i < 3; i++) {
     const d = new Date(start);
     d.setDate(d.getDate() + i * 7);

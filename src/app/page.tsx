@@ -10,9 +10,10 @@ const WHO_SERVE_IMAGES = [
 ];
 const HOW_BJJ_IMAGES = [
   "/images/confidence.png",
-  "/images/discipline.png",
-  "/images/community.png",
   "/images/resilience.png",
+  "/images/emotional-control.png",
+  "/images/structure.png",
+  "/images/belonging.png",
 ];
 
 const whoWeServe = [
@@ -34,10 +35,11 @@ const whoWeServe = [
 ];
 
 const howBjjHelps = [
-  { label: "Confidence", short: "Stand your ground.", image: HOW_BJJ_IMAGES[0] },
-  { label: "Discipline", short: "Show up. Do the work.", image: HOW_BJJ_IMAGES[1] },
-  { label: "Community", short: "You're not alone on the mat.", image: HOW_BJJ_IMAGES[2] },
-  { label: "Resilience", short: "Get comfortable being uncomfortable.", image: HOW_BJJ_IMAGES[3] },
+  { label: "Confidence", short: "Own your strength.", image: HOW_BJJ_IMAGES[0] },
+  { label: "Resilience", short: "Struggle. Adapt. Rise.", image: HOW_BJJ_IMAGES[1] },
+  { label: "Emotional Control", short: "Stay steady.", image: HOW_BJJ_IMAGES[2] },
+  { label: "Structure", short: "Show up. Build stability.", image: HOW_BJJ_IMAGES[3] },
+  { label: "Belonging", short: "Built together.", image: HOW_BJJ_IMAGES[4] },
 ];
 
 export default function HomePage() {
@@ -131,7 +133,7 @@ export default function HomePage() {
           <h2 className="font-display text-3xl tracking-wider text-cream md:text-4xl">
             How Jiu Jitsu Helps
           </h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {howBjjHelps.map((item) => (
               <div
                 key={item.label}
@@ -146,7 +148,7 @@ export default function HomePage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
-                <div className={`border-l-4 border-t border-grit-600 py-4 pl-5 pr-4 ${item.label === "Resilience" ? "border-l-grit-600" : "border-l-rust-500"}`}>
+                <div className="border-l-4 border-l-rust-500 border-t border-grit-600 py-4 pl-5 pr-4">
                   <p className="font-display text-lg tracking-wider text-cream">
                     {item.label}
                   </p>
@@ -155,36 +157,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* The Goal: Battlecry Training Facility */}
-      <section className="section-padding border-b border-grit-600 bg-grit-900 grunge-bg">
-        <div className="max-section">
-          <p className="font-display text-sm uppercase tracking-[0.3em] text-rust-500">
-            The Goal
-          </p>
-          <h2 className="mt-2 font-display text-3xl tracking-wider text-cream md:text-4xl">
-            Battlecry Training Facility
-          </h2>
-          <p className="mt-6 max-w-2xl font-body text-grit-300">
-            Once we raise enough funds, we&apos;ll open a physical space that includes a
-            dedicated Jiu Jitsu training area, childcare for families, and recovery
-            options—injury recovery, relaxation, and bodywork. Your donations
-            directly move us toward opening those doors.
-          </p>
-          <div className="mt-8 flex items-center gap-4">
-            <div className="h-2 flex-1 max-w-md overflow-hidden rounded-full bg-grit-700">
-              <div
-                className="h-full rounded-full bg-rust-500"
-                style={{ width: "35%" }}
-              />
-            </div>
-            <span className="font-body text-sm text-grit-400">Progress to goal</span>
-          </div>
-          <Link href="/donate" className="btn-primary mt-8">
-            Help Us Get There
-          </Link>
         </div>
       </section>
 

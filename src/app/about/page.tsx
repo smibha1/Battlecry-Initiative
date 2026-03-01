@@ -58,9 +58,9 @@ export default function AboutPage() {
           </h2>
           <p className="mt-4 max-w-2xl font-body text-grit-300">
             We run classes and community support built around Jiu Jitsu—structured
-            training, mentorship, and a culture of showing up for each other. As we
-            grow, we&apos;re moving toward a dedicated facility; until then, we partner
-            with spaces and instructors who share our mission.
+            training, mentorship, and a culture of showing up for each other. We
+            currently train out of Tri-City Gym while building long-term support for
+            our programs.
           </p>
           <ul className="mt-6 list-inside list-disc space-y-2 font-body text-grit-300">
             <li>Structured classes for each population we serve</li>
@@ -76,15 +76,33 @@ export default function AboutPage() {
           <h2 className="font-display text-3xl tracking-wider text-cream">
             Our Values
           </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {["Discipline", "Courage", "Service", "Community"].map((value) => (
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {[
+              {
+                title: "Discipline",
+                body: "Growth is built through consistency. We believe in showing up, honoring commitments, and doing the work even when it&apos;s hard. Discipline creates stability - and stability creates freedom.",
+              },
+              {
+                title: "Courage",
+                body: "Real courage is quiet. It&apos;s walking into a room when you&apos;re unsure. It&apos;s trying again after you&apos;ve failed. We create space for people to face discomfort safely and discover strength they didn&apos;t know they had.",
+              },
+              {
+                title: "Service",
+                body: "Strength is not meant to be kept - it&apos;s meant to be used for good. We lead with humility and responsibility, teaching that protecting and uplifting others is part of true leadership.",
+              },
+              {
+                title: "Community",
+                body: "Healing does not happen in isolation. We foster an environment of respect, accountability, and belonging. When one person grows, the whole community grows with them.",
+              },
+            ].map((value) => (
               <div
-                key={value}
-                className="rounded-lg border border-grit-600/50 bg-grit-800/30 py-4 text-center"
+                key={value.title}
+                className="rounded-lg border border-grit-600/50 bg-grit-800/30 p-6"
               >
                 <p className="font-display text-lg tracking-wider text-rust-400">
-                  {value}
+                  {value.title}
                 </p>
+                <p className="mt-3 font-body text-grit-300">{value.body}</p>
               </div>
             ))}
           </div>
@@ -94,17 +112,15 @@ export default function AboutPage() {
       <section className="section-padding grunge-bg">
         <div className="max-section">
           <h2 className="font-display text-3xl tracking-wider text-cream">
-            The Long-Term Plan: Battlecry Training Facility
+            Where We Train
           </h2>
           <p className="mt-6 max-w-2xl font-body text-grit-300">
-            Our goal is to open a physical location that includes a dedicated Jiu
-            Jitsu training space, childcare for families with young children, and
-            recovery options—injury recovery, relaxation, and bodywork. Proceeds
-            from our shop and donations go directly toward making that facility a
-            reality.
+            We currently run classes and events out of Tri-City Gym in Artesia. Your
+            support helps us keep programs accessible for veterans, women in need,
+            and underprivileged youth.
           </p>
-          <Link href="/donate" className="btn-primary mt-8">
-            Support the Facility
+          <Link href="/events" className="btn-primary mt-8">
+            View Class Events
           </Link>
         </div>
       </section>

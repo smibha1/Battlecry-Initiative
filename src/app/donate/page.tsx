@@ -12,8 +12,8 @@ export default function DonatePage() {
             Support Our Mission
           </h1>
           <p className="mt-8 max-w-2xl font-body text-lg text-grit-300">
-            Your gift funds scholarships, gear, and our path to opening the
-            Battlecry Training Facility. Every dollar helps.
+            Your gift funds scholarships, gear, and support for programs currently
+            run out of Tri-City Gym. Every dollar helps.
           </p>
         </div>
       </section>
@@ -26,9 +26,12 @@ export default function DonatePage() {
           <p className="mt-2 font-body text-grit-400">
             One-time or monthly. Tax-deductible. Secure. You&apos;ll receive a receipt by email.
           </p>
+          <p className="mt-3 inline-block rounded-full border border-grit-600 bg-grit-800 px-4 py-1 font-body text-sm text-grit-300">
+            comming soon
+          </p>
 
           {/* Mock form - replace with Stripe/Donorbox etc. */}
-          <div className="mt-8 max-w-lg">
+          <div className="mt-8 max-w-lg opacity-50 pointer-events-none grayscale">
             <div className="mb-4 flex gap-2">
               <button
                 type="button"
@@ -90,8 +93,8 @@ export default function DonatePage() {
                 bullets: ["Programs for at-risk youth", "Mentorship and discipline", "A place to belong"],
               },
               {
-                title: "The Facility",
-                bullets: ["Dedicated training space", "Childcare for families", "Recovery and bodywork"],
+                title: "Program Support",
+                bullets: ["Tri-City Gym class support", "Equipment and mat space", "Community outreach and events"],
               },
             ].map((block) => (
               <div

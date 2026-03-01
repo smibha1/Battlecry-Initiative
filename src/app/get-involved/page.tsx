@@ -89,28 +89,27 @@ export default function GetInvolvedPage() {
       <section className="section-padding grunge-bg">
         <div className="max-section">
           <h2 className="font-display text-2xl tracking-wider text-cream">
-            Our Partners
+            Our Partner
           </h2>
           <p className="mt-2 font-body text-grit-400">
-            Thank you to our partners who help make our programs possible.
+            Thank you to our partner who helps make our programs possible.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-10 rounded-xl border border-grit-600 bg-grit-800 px-8 py-10 md:gap-14">
+          <div className="mt-8 flex items-center justify-center rounded-xl border border-rust-500/40 bg-grit-800 px-8 py-12">
             <a
               href={TRI_CITY_DIRECTIONS}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 transition opacity-90 hover:opacity-100"
+              className="flex items-center justify-center transition opacity-95 hover:opacity-100"
             >
-              <div className="relative h-16 w-40 md:h-20 md:w-48">
+              <div className="relative h-24 w-56 md:h-28 md:w-72">
                 <Image
                   src="/images/tri-city-logo.png"
                   alt="Tri-City Jiu-Jitsu Club"
                   fill
-                  className="object-contain object-left"
-                  sizes="192px"
+                  className="object-contain"
+                  sizes="(max-width: 768px) 224px, 288px"
                 />
               </div>
-              <span className="font-body text-sm text-grit-400">Artesia, CA</span>
             </a>
           </div>
         </div>
