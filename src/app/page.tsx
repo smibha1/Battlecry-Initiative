@@ -12,7 +12,7 @@ const HOW_BJJ_IMAGES = [
   "/images/confidence.png",
   "/images/discipline.png",
   "/images/community.png",
-  "/images/main-page.png",
+  "/images/resilience.png",
 ];
 
 const whoWeServe = [
