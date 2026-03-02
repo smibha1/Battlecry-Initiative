@@ -80,15 +80,15 @@ export default function AboutPage() {
             {[
               {
                 title: "Discipline",
-                body: "Growth is built through consistency. We believe in showing up, honoring commitments, and doing the work even when it&apos;s hard. Discipline creates stability - and stability creates freedom.",
+                body: "Growth is built through consistency. We believe in showing up, honoring commitments, and doing the work even when it's hard. Discipline creates stability - and stability creates freedom.",
               },
               {
                 title: "Courage",
-                body: "Real courage is quiet. It&apos;s walking into a room when you&apos;re unsure. It&apos;s trying again after you&apos;ve failed. We create space for people to face discomfort safely and discover strength they didn&apos;t know they had.",
+                body: "Real courage is quiet. It's walking into a room when you're unsure. It's trying again after you've failed. We create space for people to face discomfort safely and discover strength they didn't know they had.",
               },
               {
                 title: "Service",
-                body: "Strength is not meant to be kept - it&apos;s meant to be used for good. We lead with humility and responsibility, teaching that protecting and uplifting others is part of true leadership.",
+                body: "Strength is not meant to be kept - it's meant to be used for good. We lead with humility and responsibility, teaching that protecting and uplifting others is part of true leadership.",
               },
               {
                 title: "Community",
