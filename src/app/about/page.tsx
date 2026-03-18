@@ -10,8 +10,9 @@ export default function AboutPage() {
             About Battlecry Initiative
           </h1>
           <p className="mt-8 max-w-2xl font-body text-lg text-grit-300">
-            Battlecry Initiative is a community-driven nonprofit built on the belief
-            that strong people build strong communities.
+            Battlecry Initiative is a community-driven nonprofit that uses Brazilian
+            Jiu-Jitsu to help people grow stronger—physically, mentally, and as
+            members of their community.
           </p>
           <p className="mt-4 max-w-2xl font-body text-lg text-grit-300">
             Our organization is led by five individuals committed to service: Lee,
@@ -27,7 +28,9 @@ export default function AboutPage() {
           <p className="mt-4 max-w-2xl font-body text-lg text-grit-300">
             Lee and Chris bring extensive experience in the nonprofit sector,
             focusing on community outreach, program development, and building
-            sustainable initiatives that serve those who need it most.
+            sustainable initiatives that serve those who need it most. Together,
+            they bring decades of experience in nonprofit leadership and martial
+            arts—designing programs that are safe, trauma-aware, and built to last.
           </p>
           <p className="mt-4 max-w-2xl font-body text-lg text-grit-300">
             Through the combined strengths of leadership, service, and martial arts,
@@ -36,8 +39,10 @@ export default function AboutPage() {
             community.
           </p>
           <p className="mt-4 max-w-2xl font-body text-lg text-grit-300">
-            At the core of everything we do is the belief that everyone deserves a
-            chance to stand stronger than they did yesterday.
+            We focus our work on women, veterans, and youth who deserve access to
+            strength, safety, and community. At the core of everything we do is the
+            belief that everyone deserves a chance to stand stronger than they did
+            yesterday.
           </p>
         </div>
       </section>

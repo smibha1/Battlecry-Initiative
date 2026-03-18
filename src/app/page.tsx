@@ -23,12 +23,12 @@ const whoWeServe = [
     image: WHO_SERVE_IMAGES[0],
   },
   {
-    title: "Women in Need",
+    title: "Women",
     desc: "Safety, confidence, and reclaiming their bodies. We offer a supportive space to build strength and self-trust.",
     image: WHO_SERVE_IMAGES[1],
   },
   {
-    title: "At-Risk Youth",
+    title: "Youth",
     desc: "Discipline, character, and a place to belong. We give kids a positive outlet and mentors who show up.",
     image: WHO_SERVE_IMAGES[2],
   },
@@ -69,9 +69,9 @@ export default function HomePage() {
               <span className="text-rust-400">Through Jiu Jitsu</span>
             </h1>
             <p className="mt-6 max-w-xl font-body text-lg text-grit-300">
-              We use Jiu Jitsu to help veterans, battered women, and underprivileged
-              youth with daily struggles, character development, confidence, and
-              overcoming fear and trauma.
+            We use Jiu Jitsu to help veterans, women, and youth with daily
+            struggles, character development, confidence, and overcoming fear and
+            trauma.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/donate" className="btn-primary">
@@ -148,12 +148,51 @@ export default function HomePage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
-                <div className="border-l-4 border-l-rust-500 border-t border-grit-600 py-4 pl-5 pr-4">
+                <div className="border-t-4 border-t-rust-500 py-4 pl-5 pr-4">
                   <p className="font-display text-lg tracking-wider text-cream">
                     {item.label}
                   </p>
                   <p className="mt-1 font-body text-sm text-grit-400">{item.short}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="section-padding border-b border-grit-600 bg-grit-900 grunge-bg">
+        <div className="max-section">
+          <h2 className="font-display text-3xl tracking-wider text-cream md:text-4xl">
+            Our Values
+          </h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {[
+              {
+                title: "Discipline",
+                body: "Growth is built through consistency. We believe in showing up, honoring commitments, and doing the work even when it's hard. Discipline creates stability—and stability creates freedom.",
+              },
+              {
+                title: "Courage",
+                body: "Real courage is quiet. It's walking into a room when you're unsure. It's trying again after you've failed. We create space for people to face discomfort safely and discover strength they didn't know they had.",
+              },
+              {
+                title: "Service",
+                body: "Strength is not meant to be kept—it's meant to be used for good. We lead with humility and responsibility, teaching that protecting and uplifting others is part of true leadership.",
+              },
+              {
+                title: "Community",
+                body: "Healing does not happen in isolation. We foster an environment of respect, accountability, and belonging. When one person grows, the whole community grows with them.",
+              },
+            ].map((value) => (
+              <div
+                key={value.title}
+                className="rounded-lg border border-grit-600/50 bg-grit-800/30 p-6"
+              >
+                <p className="font-display text-lg tracking-wider text-rust-400">
+                  {value.title}
+                </p>
+                <p className="mt-3 font-body text-grit-300">{value.body}</p>
               </div>
             ))}
           </div>
